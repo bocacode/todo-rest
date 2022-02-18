@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { getTasks, createTask } = require('./src/tasks');
+const { getTasks, createTask, updateTask } = require('./src/tasks');
 const PORT = process.env.PORT || 3000;
 
 const app = express();
