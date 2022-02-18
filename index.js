@@ -10,7 +10,7 @@ app.use(express.json());
 // Routes
 app.post('/tasks', createTask);
 app.get('/tasks', getTasks);
-// app.patch('/tasks/:taskId', updateTask);
+app.patch('/tasks/:taskId', updateTask);
 
 app.listen(PORT, () => {
   console.log('Listening on Port: ', PORT)
